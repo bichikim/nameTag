@@ -2,6 +2,7 @@
   "name": "@bichi/nameTag",
   "version": "0.0.1",
   "description": "Name mapper",
+  "license": "MIT",
   "author": {
     "name": "bichi",
     "email": "bichi@live.co.kr"
