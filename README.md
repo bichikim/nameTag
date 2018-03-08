@@ -1,6 +1,6 @@
 ![intro](media/intro.png)
 
- 🎫 Map key and value of an object or array
+ 🎫 Map keys and values in an object or an array
 
 ## How to use
 👀 See /src/index.spec.js
