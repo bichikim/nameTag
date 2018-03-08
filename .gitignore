@@ -10,7 +10,7 @@ yarn-error.log
 /src/static/sw.js
 
 # Nuxt generate
-dist
+# dist
 
 # .lock
 yarn.lock
