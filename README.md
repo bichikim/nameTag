@@ -3,7 +3,7 @@
  🎫 Map keys and values in an object or an array
 
 ## How to use
-👀 See /src/index.spec.js
+> 👀 See /src/index.spec.js
 ```typescript
 import {mapInfinity} from './src/index'
     const keys = {
