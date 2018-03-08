@@ -3,10 +3,7 @@
   "version": "0.0.1",
   "description": "Name mapper",
   "license": "MIT",
-  "author": {
-    "name": "bichi",
-    "email": "bichi@live.co.kr"
-  },
+  "author": "bichi",
   "main": "dist/app.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/_mocha --recursive -R spec",
