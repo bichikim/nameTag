@@ -12,10 +12,12 @@ module.exports = function(config) {
     reporters: ['spec'],
     files: [
       {pattern: './src/**/*.spec.ts', watched: false},
+      {pattern: './src/**/*.spec.js', watched: false},
     ],
     exclude: [],
     preprocessors: {
       './src/**/*.ts': ['webpack', 'sourcemap'],
+      './src/**/*.js': ['webpack', 'sourcemap'],
     },
     webpack,
     webpackMiddleware: {
