@@ -1,10 +1,10 @@
 import forEach from 'lodash/forEach'
+import isArray from 'lodash/isArray'
 import isNil from 'lodash/isNil'
 import isObject from 'lodash/isObject'
 import isString from 'lodash/isString'
 import split from 'lodash/split'
 import startsWith from 'lodash/startsWith'
-// import toLower from 'lodash/toLower'
 import trimStart from 'lodash/trimStart'
 import {
   IKeys,
@@ -59,14 +59,14 @@ export const mapInfinity = (
 ): IKeys => {
   const resultKeys: IKeys = {}
   const {til = TIL_INFINITY} = options
-  forEach(keys, (item, key) => {
+  forEach(keys, (value, key) => {
     const {keyInfo = {}, valueInfo = {}} = mapInfo
     const mappedKey = stringMap(key, keyInfo, options)
-    let myItem = item
-    if(isObject(item) && til !== 0){
+    let myItem = value
+    if((isObject(value) || isArray(value)) && til !== 0){
       myItem = mapInfinity(myItem as IKeys, mapInfo, {...options, til: til - 1})
-    }else if(isString(item)){
-      myItem = stringMap(item, valueInfo, options)
+    }else if(isString(value)){
+      myItem = stringMap(value, valueInfo, options)
     }
     resultKeys[mappedKey] = myItem
   })
