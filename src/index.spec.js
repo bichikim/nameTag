@@ -1,9 +1,19 @@
 import {mapInfinity} from './index'
+const npm = require('name-tag1')
 describe('stringMap', () => {
   let keys
   let keyInfo
   let mappedKeys
   let valueInfo
+  describe('name-tag1 from npm', () => {
+    const {mapInfinity, mapAll, stringMap} = npm
+    it('can get', () => {
+      expect(mapInfinity).to.be.a('function')
+      expect(mapAll).to.be.a('function')
+      expect(stringMap).to.be.a('function')
+    })
+
+  })
   beforeEach(() => {
     keys = {
       '$app/name': 'app/name/data',
