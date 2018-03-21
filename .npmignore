@@ -3,6 +3,7 @@
 /typings
 /build
 /media
+.idea
 .eslintignore
 .eslintrc.js
 karma.config.js
